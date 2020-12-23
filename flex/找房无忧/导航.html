@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>导航</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul{
+				list-style: none;
+			}
+			.box{
+				width: 100%;
+				/*height: 2000px;*/
+			}
+			header{
+				width: 100%;
+				height: 0.5rem;
+				background: #ff8a00;
+				position: fixed;
+				top: 0;
+				z-index: 1;
+			}
+			.ding{
+				width: 90%;
+				margin: 0 auto;
+				font-size: 0.14rem;
+				display: flex;
+				justify-content: space-between;
+			}
+			header>.ding>p>img{
+				padding: 0.1rem 0 0 0;
+			}
+			@media screen and (max-width: 630px) {
+				header>.ding>p>img{
+					height: 48%;
+				}
+			}
+			header>.ding>p>img:nth-child(2){
+				margin-left: 0.1rem;
+			}
+			.neirong{
+				margin-top: 0.5rem;
+				margin-bottom: 1.5rem;
+			}
+			.diDaoHang{
+				width: 100%;
+				height: 1.5rem;
+				font-size: 0.12rem;
+				background: #2f3130;
+				color: #727473;
+				position: fixed;
+				bottom: 0;
+				z-index: 1;
+			}
+			.diDaoHang>.wang{
+				width: 90%;
+				margin: 0 auto;
+				padding: 0.1rem 0;
+				border-bottom: 0.01rem solid #727473;
+				
+			}
+			.diDaoHang>.duan{
+				width: 72%;
+				margin: 0 auto;
+			}
+			.diDaoHang>.duan>.shang{
+				display: flex;
+			}
+			.diDaoHang>.duan>.shang>ul{
+				width: 50%;
+				display: flex;
+				text-align: center;
+			}
+			.diDaoHang>.duan>.shang>ul>li{
+				padding: 0.1rem 0.05rem 0 0.05rem;
+			}
+			.diDaoHang>.duan>.shang>ul>li>p{
+				padding: 0.02rem 0;
+			}
+			.diDaoHang>.duan>.shang>ul>li>img{
+				width: 100%;
+				padding: 0.05rem 0;
+			}
+			.diDaoHang>.duan>.xia{
+				padding: 0.1rem 0;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<header>
+				<div class="ding">
+					<p><img src="image/index/logo.jpg"/></p>
+					<p>
+						<img src="image/index/my.jpg"/>
+						<img src="image/index/xiazai.jpg"/>
+					</p>
+				</div>
+			</header>
+			<div class="neirong">
+				
+			</div>
+			<div class="diDaoHang">
+				<div class="wang">
+					<p>北京找房无忧 > 首页</p>
+				</div>
+				<div class="duan">
+					<div class="shang">
+						<ul>
+							<li><img src="image/index/apple.png"/></li>
+							<li>
+								<p>iPhone</p>
+								<p>客户端</p>
+							</li>
+						</ul>
+						<ul>
+							<li><img src="image/index/android.png"/></li>
+							<li>
+								<p>Android</p>
+								<p>客户端</p>
+							</li>
+						</ul>
+					</div>
+					<div class="xia">
+						<p>北京找房无忧房地产经纪公司</p>
+						<p>网络经营许可证京ICP备20160812号</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/rem.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+</html>

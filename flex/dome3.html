@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>flex-wrap</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*清除浮动*/
+			/*.box:after{
+				clear: both;
+				display: block;
+				content: " ";
+			}*/
+			.box{
+				border: 1px solid red;
+				/*伸缩性(flex)*/
+				/*伸缩布局的特性是伸缩项目可伸缩，
+				 * 也就是让伸缩项目的宽度或高度自动
+				 * 填充伸缩容器额外的空间*/
+				display: flex;
+				/*伸缩换行（flex-wrap）*/
+				/*flex-wrap属性适用于伸缩容器,也就是伸缩项目的父元素
+				 主要用来定义伸缩容器里是单行显示还是多行显示。侧轴
+				 的方向决定了新行堆放的方向。*/
+				/*flex-wrap: nowrap|wrap|wrap-reverse;*/
+				/*nowrap：默认值：伸缩容器单行显示，伸缩项目不会换行。*/
+				/*wrap：伸缩容器单行显示，伸缩项目会换行。*/
+				/*wrap-reverse：伸缩容器单行显示，伸缩项目会换行，
+				 并且颠倒行顺序。*/
+				flex-wrap: wrap-reverse;
+			}
+			.box>p{
+				/*float: left;*/
+				width: 100px;
+				height: 100px;
+				font-size: 60px;
+				border: 1px solid blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+		</div>
+	</body>
+</html>

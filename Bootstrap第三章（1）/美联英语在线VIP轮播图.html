@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>美联英语在线VIP轮播图</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	 	<style type="text/css">
+            button{
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="nav  navbar-default">
+            <div class="container">
+                <ul class="nav navbar-nav">
+                    <li><a href="#"><span class="glyphicon glyphicon-phone-alt"></span>400-777-8828</a></li>
+                    <li><a href="#">中文</a></li>
+                    <li><a href="#">英文</a></li>
+                </ul>
+                <button class="btn btn-danger pull-right">免费注册</button>
+                <button class="btn btn-default pull-right">登录</button>
+				<div id="myCarousel" class="carousel slide">
+					<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+					</ol>   
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<img src="img/img1.jpg"/>
+						</div>
+						<div class="item">
+							<img src="img/img2.jpg"/>
+						</div>
+						<div class="item">
+							<img src="img/img3.jpg"/>
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+					<a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+						<!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>-->
+						<span class="sr-only"><</span>
+					</a>
+					<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+						<!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>-->
+						<span class="sr-only" style="width: 50px;height: 50px;color: palevioletred;">></span>
+					</a>
+				</div> 
+			</div>
+		</nav>
+	</body>
+</html>

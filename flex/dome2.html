@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>flex-direction</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			/*清除浮动*/
+			/*.box:after{
+				clear: both;
+				display: block;
+				content: " ";
+			}*/
+			.box{
+				border: 1px solid red;
+				/*伸缩性(flex)*/
+				/*伸缩布局的特性是伸缩项目可伸缩，
+				 * 也就是让伸缩项目的宽度或高度自动
+				 * 填充伸缩容器额外的空间*/
+				display: flex;
+				/*伸缩流方向(flex-direction)*/
+				/*flex-direction属性决定主轴的方向（及项目的排列方向），
+				 可以很简单的将多个元素的排列方向从水平方向修改为垂直方向
+				 或者从垂直方向修改为水平方向*/
+				/*flex-direction: row|row-reverse|column|column-reverse;*/
+				/*row:主轴为水平方向，起点在左端。即网页元素排版方式
+				 * 为从左到右排列（默认值）*/
+				/*row-reverse：主轴为水平方向，起点在右端。与row相反
+				 * 元素从右到左排列*/
+				/*column：主轴为垂直方向，起点在上端。与row相似
+				 * 不过元素从上到下排列*/
+				/*column-reverse：主轴为垂直方向，起点在下端。类似于
+				 * row-reverse，不过元素从下到上排列*/
+				flex-direction: column-reverse;
+				
+			}
+			.box>p{
+				/*float: left;*/
+				width: 100px;
+				height: 100px;
+				font-size: 60px;
+				border: 1px solid blueviolet;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+			<p>1</p>	
+			<p>2</p>	
+			<p>3</p>	
+		</div>
+	</body>
+</html>
